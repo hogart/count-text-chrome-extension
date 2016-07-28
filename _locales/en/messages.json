@@ -1,0 +1,29 @@
+{
+    "charsWoSpaces": {
+        "message": "Characters without spaces:"
+    },
+
+    "uniqueWordsTitle": {
+        "message": "# of unique words: "
+    },
+
+    "uniqueWordsMsg": {
+        "message": "$1 ($2%)"
+    },
+
+    "sentencesCount": {
+        "message": "# of sentences: "
+    },
+
+    "avgSentenceLength": {
+        "message": "Average sentence length: "
+    },
+
+    "avgWordLength": {
+        "message": "Average word length: "
+    },
+
+    "summary": {
+        "message": "$1 words, $2 characters"
+    }
+}

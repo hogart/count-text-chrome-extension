@@ -1,0 +1,29 @@
+{
+    "charsWoSpaces": {
+        "message": "Символов с пробелами:"
+    },
+
+    "uniqueWordsTitle": {
+        "message": "Кол-во уникальных слов: "
+    },
+
+    "uniqueWordsMsg": {
+        "message": "$1 ($2%)"
+    },
+
+    "sentencesCount": {
+        "message": "Кол-во предложений: "
+    },
+
+    "avgSentenceLength": {
+        "message": "Средняя длина предложения: "
+    },
+
+    "avgWordLength": {
+        "message": "Средняя длина слова: "
+    },
+
+    "summary": {
+        "message": "$1 слов, $2 символов"
+    }
+}
