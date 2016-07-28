@@ -35,7 +35,7 @@
             title: summary,
             message: summary,
             type: 'list',
-            iconUrl: 'icon.png',
+            iconUrl: '48.png',
             items: itemsOptions,
             // buttons: [],
             isClickable: true
