@@ -1,13 +1,13 @@
 {
+  "manifest_version": 2,
   "name": "count(text)",
-  "description": "Simple text stats: characters, words, etc. Constantly shows word and characters count on Evernote Web, but can be used to show advanced text info on any selected text (through context menu).",
-  "version": "0.1",
+  "description": "Shows word and characters count on Evernote Web, and shows advanced text info on any selected text (context menu).",
+  "version": "1.0.0",
   "permissions": ["contextMenus", "notifications", "tabs", "storage", "http://*/*", "https://*/*"],
   "background": {
     "persistent": false,
     "scripts": ["calculateStats.js", "bg.js"]
   },
-  "manifest_version": 2,
   "icons": {
     "16": "16.png",
     "48": "48.png",

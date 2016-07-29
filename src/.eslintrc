@@ -1,16 +1,17 @@
 {
-    "root": true,
     "parserOptions": {
       "ecmaVersion": 6,
       "sourceType": "script"
     },
     "env": {
       "es6": true,
-      "node": true
+      "browser": true
     },
-    "extends": "loris/es6",
+    "globals": {
+        "chrome": true
+    },
+    "extends": "../.eslintrc",
     "rules": {
-      "comma-dangle": ["error", "always-multiline"],
-      "eol-last": ["off"]
+        "strict": ["error", "function"]
     }
 }

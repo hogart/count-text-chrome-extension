@@ -1,5 +1,9 @@
+/* global calculateStats */
 (() => {
     'use strict';
+
+    let displayTarget;
+    let observeTarget;
 
     const observer = new MutationObserver(() => {
         const stats = calculateStats(observeTarget.textContent);
@@ -12,9 +16,6 @@
         childList: true,
         subtree: true,
     };
-
-    let displayTarget;
-    let observeTarget;
 
     function getEditor() {
         const iframe = document.querySelector('iframe[name$="common-editor-iframe"]');

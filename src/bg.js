@@ -1,3 +1,4 @@
+/* global calculateStats */
 (() => {
     'use strict';
 
@@ -5,7 +6,7 @@
 
     function showStats(text) {
         //Clear old notification
-        chrome.notifications.clear(notificationId, wasCleared => {});
+        chrome.notifications.clear(notificationId, () => {});
 
         const stats = calculateStats(text);
         const itemsOptions = [
@@ -15,7 +16,10 @@
             },
             {
                 title: chrome.i18n.getMessage('uniqueWordsTitle'),
-                message: chrome.i18n.getMessage('uniqueWordsMsg', [stats.uniqueWordAmount, stats.uniqueWordsPercentage]),
+                message: chrome.i18n.getMessage(
+                    'uniqueWordsMsg',
+                    [stats.uniqueWordAmount, stats.uniqueWordsPercentage]
+                ),
             },
             {
                 title: chrome.i18n.getMessage('avgWordLength'),
@@ -38,10 +42,10 @@
             iconUrl: '48.png',
             items: itemsOptions,
             // buttons: [],
-            isClickable: true
+            isClickable: true,
         };
 
-        chrome.notifications.create(notificationId, notificationOptions, notificationID => {});
+        chrome.notifications.create(notificationId, notificationOptions, () => {});
     }
 
     function onContextMenuClick({selectionText}) {
@@ -52,7 +56,7 @@
         chrome.contextMenus.create({
             title: 'Text stats',
             id: 'parent',
-            contexts: ['selection']
+            contexts: ['selection'],
         });
     }
 
