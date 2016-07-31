@@ -1,9 +1,19 @@
+/*
+ The MIT License (MIT)
+ Copyright (c) 2016 Konstantin Kitmanov <doctor.hogart@gmail.com>
+ https://github.com/hogart/count-text-chrome-extension
+ */
+
 /* global calculateStats */
 (() => {
     'use strict';
 
     let displayTarget;
     let observeTarget;
+    const observeSettings = {
+        childList: true,
+        subtree: true,
+    };
 
     const observer = new MutationObserver(() => {
         const stats = calculateStats(observeTarget.textContent);
@@ -11,11 +21,6 @@
 
         displayTarget.dataset.ewStats = summary;
     });
-
-    const observeSettings = {
-        childList: true,
-        subtree: true,
-    };
 
     function getEditor() {
         const iframe = document.querySelector('iframe[name$="common-editor-iframe"]');

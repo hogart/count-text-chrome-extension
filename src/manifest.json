@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "count(text)",
   "description": "Shows word and characters count on Evernote Web, and shows advanced text info on any selected text (context menu).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "permissions": ["contextMenus", "notifications", "tabs", "storage", "http://*/*", "https://*/*"],
   "background": {
     "persistent": false,

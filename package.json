@@ -1,6 +1,6 @@
 {
   "name": "count-text-chrome-extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chrome extension with text stats",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/hogart/count-text-chrome-extension.git"
   },
-  "author": "",
+  "author": "Konstantin Kitmanov <doctor.hogart@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hogart/count-text-chrome-extension/issues"
   },
-  "homepage": "https://github.com/hogart/count-text-chrome-extension#readme",
+  "homepage": "https://github.com/hogart/count-text-chrome-extension",
   "devDependencies": {
     "eslint": "^3.2.0",
     "eslint-config-loris": "^5.1.0",
