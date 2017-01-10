@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "count(text)",
-  "description": "Shows word and characters count on Evernote Web, and shows advanced text info on any selected text (context menu).",
+  "description": "Shows word and characters count on Trello, Evernote Web, and shows advanced text info on any selected text (context menu).",
   "version": "1.0.1",
   "permissions": ["contextMenus", "notifications", "tabs", "storage", "http://*/*", "https://*/*"],
   "background": {
@@ -20,6 +20,11 @@
       "matches": ["https://www.evernote.com/Home.action*"],
       "js": ["calculateStats.js", "ew.js"],
       "css": ["ew.css"]
+    },
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["calculateStats.js", "trello.js"],
+      "css": []
     }
   ]
 }
