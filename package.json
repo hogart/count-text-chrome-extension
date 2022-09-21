@@ -1,16 +1,16 @@
 {
   "name": "count-text-chrome-extension",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Chrome extension with text stats",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "build": "grunt"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hogart/count-text-chrome-extension.git"
   },
-  "author": "Konstantin Kitmanov <doctor.hogart@gmail.com",
+  "author": "Konstantin Kitmanov <me@kitmanov.name>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hogart/count-text-chrome-extension/issues"
@@ -18,9 +18,8 @@
   "homepage": "https://github.com/hogart/count-text-chrome-extension",
   "devDependencies": {
     "@types/chrome": "0.0.38",
-    "eslint": "^3.2.0",
-    "eslint-config-loris": "^5.1.0",
+    "eslint": "^8.23.1",
     "grunt": "^1.0.1",
-    "grunt-zip": "^0.17.1"
+    "grunt-zip": "^0.14.0"
   }
 }

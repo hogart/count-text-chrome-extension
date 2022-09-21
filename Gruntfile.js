@@ -1,3 +1,5 @@
+/* eslint-env node*/
+
 'use strict';
 
 const pkg = require('./package.json');
@@ -8,7 +10,7 @@ module.exports = (grunt) => {
             files: {
                 cwd: 'src/',
                 dest: `dist/${pkg.name}.zip`,
-                src: ['src/**/*.*', '!src/.eslintrc'],
+                src: ['src/**/*.*'],
             },
         },
     });
