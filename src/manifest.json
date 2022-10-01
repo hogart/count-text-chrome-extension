@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "count(text)",
   "description": "Shows word and characters count and some other info on any selected text (context menu).",
-  "version": "2.0.0",
-  "permissions": ["contextMenus", "notifications", "tabs", "http://*/*", "https://*/*"],
+  "version": "2.0.1",
+  "permissions": ["contextMenus", "notifications", "http://*/*", "https://*/*"],
   "background": {
     "persistent": false,
     "scripts": ["calculateStats.js", "bg.js"]
